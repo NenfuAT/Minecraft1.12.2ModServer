@@ -64,3 +64,4 @@
 [11:59:09] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Done (1.517s)! For help, type "help" or "?"
 [11:59:10] [Server thread/INFO] [FML]: Unloading dimension -1
 [11:59:10] [Server thread/INFO] [FML]: Unloading dimension 1
+[11:59:54] [Server thread/WARN] [net.minecraft.server.MinecraftServer]: Failed to check session lock, aborting

@@ -4253,3 +4253,8 @@
 [11:59:09] [Server thread/DEBUG] [FML]: Queueing dimension 1 to unload
 [11:59:10] [Server thread/INFO] [FML]: Unloading dimension -1
 [11:59:10] [Server thread/INFO] [FML]: Unloading dimension 1
+[11:59:54] [Server thread/WARN] [net.minecraft.server.MinecraftServer]: Failed to check session lock, aborting
+[11:59:59] [Server thread/DEBUG] [FML]: The world 2b080b11 (world) may have leaked: first encounter (5 occurrences).
+
+[11:59:59] [Server thread/DEBUG] [FML]: The world 5b17351e (world) may have leaked: first encounter (5 occurrences).
+
