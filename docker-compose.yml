@@ -6,7 +6,7 @@ services:
     ports:
       - "25565:25565"
     volumes:
-      - ${HOME}/minecraft/server/mods:/server/mods # MODディレクトリだけホストからマウント
+      - ./minecraft/server/mods:/server/mods # MODディレクトリだけホストからマウント
     build:
       context: .
       dockerfile: ./docker/MCServer/Dockerfile
