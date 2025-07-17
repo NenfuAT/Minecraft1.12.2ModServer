@@ -3,10 +3,16 @@ version: "3.8"
 services:
   minecraft:
     container_name: forge_1.12.2_server
-    image: openjdk:8-jre-slim
+    build:
+      context: ./docker/MCServer
+      dockerfile: Dockerfile
     ports:
       - "25565:25565"
     volumes:
       - ./minecraft/server:/server
     working_dir: /server
-    command: ["java", "-Xmx2G", "-Xms1G", "-jar", "forge-1.12.2-14.23.5.2860.jar", "nogui"]
+    command: ["screen", "-DmS", "minecraft", "java", "-Xmx8G", "-Xms1G", "-jar", "forge-1.12.2-14.23.5.2860.jar", "nogui"]
+    security_opt:
+      - apparmor=unconfined
+    tty: true
+    stdin_open: true
